@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Img"
+        android:layout_width="225dp"
+        android:layout_height="191dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/test3" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TTT"
+                android:layout_width="304dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+
+                android:layout_marginTop="50dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/YYY"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:hint="输入账号"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    app:drawableStartCompat="@drawable/test1"
+                    app:hintAnimationEnabled="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="306dp"
+        android:layout_height="143dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UUU"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/III"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                app:drawableStartCompat="@drawable/test2"
+                app:hintAnimationEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/UUU"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="立即注册" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/UUU"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="忘记密码" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/la"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/TEST"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="登陆" />
+    </LinearLayout>
+    <CheckBox
+        android:layout_marginRight="30dp"
+        android:id="@+id/check_box"
+        android:text="记住密码"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
